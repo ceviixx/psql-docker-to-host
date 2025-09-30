@@ -1,0 +1,41 @@
+name: Question
+description: Ask a question about usage or setup
+title: "[QUESTION] "
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What would you like to know?
+      placeholder: Ask your question...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What are you trying to accomplish?
+      placeholder: What's your goal or use case?
+    validations:
+      required: true
+  
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you've tried
+      description: What have you already attempted?
+      placeholder: What steps have you already taken?
+  
+  - type: input
+    id: os-info
+    attributes:
+      label: Operating System (if relevant)
+      placeholder: e.g. macOS 14, Ubuntu 22.04
+  
+  - type: input
+    id: docker-info
+    attributes:
+      label: Docker Version (if relevant)
+      placeholder: Run 'docker --version'
